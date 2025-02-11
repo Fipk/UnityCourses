@@ -16,7 +16,7 @@ public class Movement : MonoBehaviour
 
         //Debug.Log($"MovementX = {movementX}, MovementY = {movementY}");
 
-        Vector2 movement = new Vector2(movementX, movementY);
+        Vector3 movement = new Vector3(movementX, movementY,0);
 
         transform.Translate(movement * Time.deltaTime * speed);
     }
